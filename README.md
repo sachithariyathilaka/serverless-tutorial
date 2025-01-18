@@ -13,7 +13,7 @@ Node.js application for serverless framework.
 
 * ### Configuration
 
-    * [Medium Blog](https://sachithariyathilaka.medium.com/deploy-serverless-node-js-app-on-aws-2267df4e59d3)
+    * [Medium Story](https://sachithariyathilaka.medium.com/deploy-serverless-node-js-app-on-aws-2267df4e59d3)
 
 
 * ### Release Note
