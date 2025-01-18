@@ -1,0 +1,71 @@
+service: serverless-tutorial
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  timeout: 300
+
+  environment:
+    NODE_ENV: production
+    MONGO_DB_URL: mongodb+srv://root:root@aws-lambda-node.nyipsqz.mongodb.net/library?retryWrites=true&w=majority&appName=aws-lambda-node
+
+plugins:
+  - serverless-offline
+
+functions:
+  app:
+    handler: src/app.handler
+    events:
+      - http:
+          path: books
+          method: post
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+            allowCredentials: false
+
+      - http:
+          path: books/{id}
+          method: put
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+            allowCredentials: false
+
+      - http:
+          path: books
+          method: get
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+            allowCredentials: false
+
+      - http:
+          path: books/{id}
+          method: delete
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+            allowCredentials: false
+
