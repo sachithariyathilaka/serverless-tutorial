@@ -11,15 +11,15 @@ Node.js application for serverless framework.
     * Serverless HTTP 3.2.0
     * Serverless Offline 14.4.0
 
-* ### Configuration
+* ### Documentation
 
-    * [Medium Story](https://sachithariyathilaka.medium.com/deploy-serverless-node-js-app-on-aws-2267df4e59d3)
+    * [Read on Medium](https://sachithariyathilaka.medium.com/deploy-serverless-node-js-app-on-aws-2267df4e59d3)
 
 
 * ### Release Note
 
-    * Release: 1.0.0
-    * Date: 2025/01/18
+    * Version: 1.0.0
+    * Release Date: 2025/01/18
     * Module: Serverless Tutorial
     * Changes
         * Implement the insert books data API.
